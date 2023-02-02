@@ -125,7 +125,7 @@ h4 {
   background-color: $bgcolor_component;
 }
 .header__inner {
-  row-gap: 23px;
+  row-gap: 12px;
 }
 // верхнее меню
 .menu {
@@ -147,6 +147,8 @@ h4 {
 // информация о пользователе
 .user {
   gap: 5%;
+  padding-top: 11px;
+  padding-bottom: 13px;
 }
 .wrapper_img {
   position: relative;
@@ -175,7 +177,19 @@ h4 {
 }
 //=====================показатели KPI=====================
 .kpi{
-    
+
+}
+.kpi__index{
+    row-gap: 13px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-right: 1px solid $color_second;
+    margin-top: 48px;
+    margin-bottom: 47px;
+}
+.kpi__index:last-child{
+    border-right: none;
 }
 //=====================блок кнопок=====================
 //=====================часы (табель)=====================
