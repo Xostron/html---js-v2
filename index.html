@@ -256,7 +256,31 @@
           </div>
         </div>
 
-        <div class="status"></div>
+        <div class="flex_col status">
+            <div class="flex_row status__title">
+                <span class="text">Текущий статус</span>
+                <button class="button button__text">
+                    Работаю
+                </button>
+            </div>
+
+            <div class="status__bar"></div>
+            
+            <div class="flex_row status__legend">
+                <div class="flex_row legend__item">
+                    <div color="green" class="legend__rect"></div>
+                    <span class="text text11 secondary text__legend">
+                        план: 176ч.
+                    </span>
+                </div>
+                <div class="flex_row legend__item">
+                    <div color="yellow" class="legend__rect"></div>
+                    <span class="text text11 secondary text__legend">
+                        факт: 100ч.
+                    </span>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
     <script src="./src/script/index.js"></script>
