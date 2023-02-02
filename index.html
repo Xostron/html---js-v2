@@ -14,7 +14,10 @@
           <div class="flex_col header__inner">
             <div class="flex_row menu">
               <div class="flex_row menu__calendar">
-                <button class="button button__icon button__menu">
+                <button
+                  onclick="handlerLeftArrow()"
+                  class="button button__icon button__menu"
+                >
                   <svg
                     width="7"
                     height="9"
@@ -26,8 +29,11 @@
                     />
                   </svg>
                 </button>
-                <span class="text text18 primary"> Апрель 2021 г. </span>
-                <button class="button button__icon button__menu">
+                <span class="text text18 primary calendar"></span>
+                <button
+                  onclick="handlerRightArrow()"
+                  class="button button__icon button__menu"
+                >
                   <svg
                     width="7"
                     height="9"
@@ -41,7 +47,10 @@
                 </button>
               </div>
               <div class="flex_row menu__btns">
-                <button class="button button__icon button__menu2">
+                <button
+                  onclick="handlerMenu2ArrowDown()"
+                  class="button button__icon button__menu2"
+                >
                   <svg
                     width="20"
                     height="22"
@@ -78,7 +87,10 @@
                     </defs>
                   </svg>
                 </button>
-                <button class="button button__icon button__menu2">
+                <button
+                  onclick="handlerUser()"
+                  class="button button__icon button__menu2"
+                >
                   <svg
                     width="20"
                     height="20"
@@ -107,9 +119,7 @@
                 />
               </div>
               <div class="flex_col user__info">
-                <span class="text text20 primary">
-                  Дин Джарин Мандалорец
-                </span>
+                <span class="text text20 primary"> Дин Джарин Мандалорец </span>
                 <span class="text text12 secondary"> Охотник за головами </span>
               </div>
             </div>
@@ -135,7 +145,11 @@
 
         <div class="grid toolbar">
           <div class="wrapper__btn">
-            <button class="button button__icon_text button_toolbar">
+            <a
+              href=""
+              target="_self"
+              class="button button__icon_text button_toolbar"
+            >
               <svg
                 class="svg__btn"
                 width="48"
@@ -149,11 +163,15 @@
                   fill="black"
                 />
               </svg>
-              <span class="text text11 primary">Карта целей</span>
-            </button>
+              <span class="text text11 primary text_btn_icon">Карта целей</span>
+            </a>
           </div>
           <div class="wrapper__btn">
-            <button class="button button__icon_text button_toolbar">
+            <a
+              href=""
+              target="_self"
+              class="button button__icon_text button_toolbar"
+            >
               <svg
                 class="svg__btn"
                 width="48"
@@ -223,11 +241,15 @@
                   fill="black"
                 />
               </svg>
-              <span class="text text11 primary">SMART Задачи</span>
-            </button>
+              <span class="text text11 primary text_btn_icon">SMART Задачи</span>
+            </a>
           </div>
           <div class="wrapper__btn">
-            <button class="button button__icon_text button_toolbar">
+            <a
+              href=""
+              target="_self"
+              class="button button__icon_text button_toolbar"
+            >
               <svg
                 class="svg__btn"
                 width="48"
@@ -296,11 +318,15 @@
                   </clipPath>
                 </defs>
               </svg>
-              <span class="text text11 primary">Оценки</span>
-            </button>
+              <span class="text text11 primary text_btn_icon">Оценки</span>
+            </a>
           </div>
           <div class="wrapper__btn">
-            <button class="button button__icon_text button_toolbar">
+            <a
+              href=""
+              target="_self"
+              class="button button__icon_text button_toolbar"
+            >
               <svg
                 class="svg__btn"
                 width="48"
@@ -362,11 +388,15 @@
                 </defs>
               </svg>
 
-              <span class="text text11 primary">Сообщения</span>
-            </button>
+              <span class="text text11 primary text_btn_icon">Сообщения</span>
+            </a>
           </div>
           <div class="wrapper__btn">
-            <button class="button button__icon_text button_toolbar">
+            <a
+              href=""
+              target="_self"
+              class="button button__icon_text button_toolbar"
+            >
               <svg
                 class="svg__btn"
                 width="48"
@@ -419,11 +449,15 @@
                   </clipPath>
                 </defs>
               </svg>
-              <span class="text text11 primary">Отчеты</span>
-            </button>
+              <span class="text text11 primary text_btn_icon">Отчеты</span>
+            </a>
           </div>
           <div class="wrapper__btn">
-            <button class="button button__icon_text button_toolbar">
+            <a
+              href=""
+              target="_self"
+              class="button button__icon_text button_toolbar"
+            >
               <svg
                 class="svg__btn"
                 width="48"
@@ -448,15 +482,20 @@
                   </clipPath>
                 </defs>
               </svg>
-              <span class="text text11 primary">Премия</span>
-            </button>
+              <span class="text text11 primary text_btn_icon">Премия</span>
+            </a>
           </div>
         </div>
 
         <div class="flex_col status">
           <div class="flex_row status__title">
             <span class="text text11 black">Текущий статус:</span>
-            <button class="text text11 button button__text">Работаю</button>
+            <button
+              onclick="handlerWork()"
+              class="text text11 button button__text"
+            >
+              Работаю
+            </button>
           </div>
 
           <div class="status__bar"></div>
@@ -476,7 +515,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
     <script src="./src/script/index.js"></script>
