@@ -6,7 +6,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  color: black; }
+  color: black;
+  background-color: #f7f9fb; }
 
 *,
 *::after,
@@ -19,11 +20,16 @@ h3,
 h4 {
   margin: 0; }
 
+.secondary {
+  color: #a6bccc; }
+
+.primary {
+  color: #001053; }
+
 .text {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
-  color: #001053; }
+  font-weight: 500; }
 
 .text11 {
   font-size: 11px;
@@ -75,6 +81,9 @@ h4 {
   outline: none;
   cursor: pointer; }
 
+.button__icon {
+  border: none; }
+
 .button__icon_text {
   display: flex;
   flex-direction: column;
@@ -89,5 +98,55 @@ h4 {
   align-items: center;
   justify-content: center;
   border: none; }
+
+.header {
+  background-color: white; }
+
+.header__inner {
+  row-gap: 23px; }
+
+.menu {
+  height: 43px;
+  align-items: center;
+  justify-content: space-between; }
+
+.menu__calendar {
+  padding-left: 50px;
+  align-items: center;
+  gap: 13px;
+  width: fit-content; }
+
+.menu__btns {
+  align-items: center;
+  gap: 18px;
+  width: fit-content; }
+
+.user {
+  gap: 5%; }
+
+.wrapper_img {
+  position: relative;
+  width: 15%;
+  height: min-content;
+  padding-top: 15%;
+  padding-left: 15%;
+  min-width: 64px;
+  min-height: 64px;
+  max-width: 256px;
+  max-height: 256px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.user__avatar {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.user__info {
+  align-items: flex-start;
+  justify-content: flex-end; }
 
 /*# sourceMappingURL=style.css.map */

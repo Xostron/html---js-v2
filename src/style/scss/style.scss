@@ -19,6 +19,7 @@ body {
   padding: 0;
   margin: 0;
   color: rgb(0, 0, 0);
+  background-color: $bgcolor_page;
 }
 *,
 *::after,
@@ -31,13 +32,17 @@ h3,
 h4 {
   margin: 0;
 }
-
+.secondary {
+  color: $color_second;
+}
+.primary {
+  color: $color_primary;
+}
 // font app
 .text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  color: $color_primary;
 }
 .text11 {
   font-size: 11px;
@@ -59,6 +64,7 @@ h4 {
   font-size: 20px;
   line-height: 24px;
 }
+
 // общая страница
 .page {
   width: 100%;
@@ -97,7 +103,7 @@ h4 {
   @extend %transition_hover;
 }
 .button__icon {
-  
+  border: none;
 }
 .button__icon_text {
   display: flex;
@@ -108,18 +114,68 @@ h4 {
   border: 1px solid $color_second;
   border-radius: 8px;
 }
-.button__text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
+.button__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
-//   заголовок
+//=====================заголовок=====================
 .header {
+  background-color: $bgcolor_component;
 }
 .header__inner {
+  row-gap: 23px;
 }
+// верхнее меню
 .menu {
+  height: 43px;
+  align-items: center;
+  justify-content: space-between;
 }
-.avatar {
+.menu__calendar {
+    padding-left: 50px;
+    align-items: center;
+    gap: 13px;
+    width: fit-content;
+  }
+.menu__btns {
+  align-items: center;
+  gap: 18px;
+  width: fit-content;
 }
+// информация о пользователе
+.user {
+  gap: 5%;
+}
+.wrapper_img {
+  position: relative;
+  width: 15%;
+  height: min-content;
+  padding-top: 15%;
+  padding-left: 15%;
+  min-width: 64px;
+  min-height: 64px;
+  max-width: 256px;
+  max-height: 256px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user__avatar {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user__info {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+//=====================показатели KPI=====================
+.kpi{
+    
+}
+//=====================блок кнопок=====================
+//=====================часы (табель)=====================
