@@ -1,0 +1,125 @@
+$bgcolor_component: rgb(255, 255, 255);
+$bgcolor_page: #f7f9fb;
+$color_primary: #001053;
+$color_second: #a6bccc;
+$color_low: #fb4e4e;
+$color_normal: #fbef4e;
+$color_high: #36c496;
+$color_accent: #0aa9ff;
+$color_font: rgb(255, 255, 255);
+$color_hover: rgb(250, 0, 255);
+// шаблоны анимации
+%transition_hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+//сброс стилей браузера
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+// font app
+.text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  color: $color_primary;
+}
+.text11 {
+  font-size: 11px;
+  line-height: 13px;
+}
+.text12 {
+  font-size: 12px;
+  line-height: 14px;
+}
+.text15 {
+  font-size: 15px;
+  line-height: 18px;
+}
+.text18 {
+  font-size: 18px;
+  line-height: 21px;
+}
+.text20 {
+  font-size: 20px;
+  line-height: 24px;
+}
+// общая страница
+.page {
+  width: 100%;
+  background-color: $bgcolor_page;
+  overflow: hidden;
+  position: relative;
+}
+// ширина контента на странице
+.container {
+  width: 100%;
+  max-width: 88%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 95%;
+  }
+}
+// общие
+.flex_row {
+  display: flex;
+}
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+}
+// CSS кнопки
+.button {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  @extend %transition_hover;
+}
+.button__icon {
+  
+}
+.button__icon_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  border: 1px solid $color_second;
+  border-radius: 8px;
+}
+.button__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+//   заголовок
+.header {
+}
+.header__inner {
+}
+.menu {
+}
+.avatar {
+}
